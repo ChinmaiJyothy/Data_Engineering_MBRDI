@@ -1,0 +1,64 @@
+#search 
+#All Collected data (will return total number of data entries in OMS.
+search *
+
+#summarize count()
+#All collected data Summarized by Type of data, providing the count for each type
+#of data
+search * | summarize count() by Type
+
+#earch for Keyword Search all collected data for the word "error".
+search "error"
+
+#The total count of Events generated within the last 4 hours
+Event
+| where TimeGenerated > ago(4h)
+| summarize count()
+
+#All collected Performance Data (stored in 'Perf' Table)
+#NOTE: Collection of performance counters is specified in the Data>Windows 
+#Performance Counters 
+Perf
+
+#Perf CPU Utilization graph per computer
+Perf
+| where TimeGenerated > ago(4h)
+| where CounterName == @"% Processor Time"
+| summarize avg(CounterValue) by Computer, bin(TimeGenerated, 15m) 
+| render timechart
+
+
+#top ten computers with the most error events over the past day.
+Event
+| where (EventLevelName == "Error")
+| where (TimeGenerated > ago(1days))
+| summarize ErrorCount = count() by Computer
+| top 10 by ErrorCount desc
+
+#find computers that haven't had a heartbeat in the last day
+Heartbeat
+| where TimeGenerated > ago(7d)
+| summarize max(TimeGenerated) by Computer
+| where max_TimeGenerated < ago(1d)
+
+#a line chart with the processor utilization for each computer from last week
+Perf
+| where ObjectName == "Processor" and CounterName == "% Processor Time"
+| where TimeGenerated  between (startofweek(ago(7d)) .. endofweek(ago(7d)) )
+| summarize avg(CounterValue) by Computer, bin(TimeGenerated, 5min)
+| render timechart
+
+
+Aggregations and bucketing by time intervals
+
+Event
+| where TimeGenerated > ago(2hr)
+| summarize events_count=count() by bin(TimeGenerated, 5m)
+
+
+Perf 
+| where TimeGenerated > ago(4hr)
+| where Computer == "WebServer01" 
+| where CounterName == "Available MBytes" 
+| summarize avg(CounterValue) by bin(TimeGenerated, 1h)
+

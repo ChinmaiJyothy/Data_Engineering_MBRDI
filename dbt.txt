@@ -1,0 +1,28 @@
+setting up dbt project and creating a model
+
+python and dbt env should be present
+ activate dbt env
+ pip install dbt-snowflake
+ in %userprofile% create .dbt // mkdir $home\.dbt
+ start using: dbt init (snowflake credentials)(creation of project)
+ Navigate to the project. DBT init creates all folder structers and imp configuration files. 
+	dbt_project.yml - project name, model and target database profile
+	 in home directory - profiles.yml : database connection details.
+ verify connectivity btw dbt and data platform : dbt debug command.
+ 
+# Creating DBT model: (sql query to carry over a perticulat transformation task on data platform.)
+ CTE: temporary tables that are accessable in same query and discarded after query execution
+ syntax:
+
+	WITH cte_name AS(
+		SELECT col1,col2...
+		FROM table_name
+		....
+		)
+		SELECT *
+		FROM cte_name;
+
+
+to run, dbt run
+
+ 

@@ -1,0 +1,37 @@
+Consider the Database schema with two tables
+-Employee Table 
+	coln - emp_Id(PK),emp_name,dept_id,sal
+-department table
+	coln - dept_id(pk),dept_name
+
+Add some data in both table and create table data based on the below sql requirements 
+
+1. Write the query to retrieve all name of employee from table who belong to IT dept?
+
+2. Sort the emp_name and sal from finance dept and also sort by desc order?
+
+3.Cal the avg sal of all emp ?
+
+4. Retrive emp name and dept name from both Employee & department?
+
+5.Display all department name along with count of employee in each dept ,even if there are no employee in some department
+
+6. query to find second highest sal in each department ?
+
+7. Rank employee based on their sal within each department ?
+
+
+activities:
+book amphitheatre
+dance fun activity 1/2 hr
+
+
+1: place objects randomely on floor. blindfold 1 person from team (2 teams). let the team direct and finish the obsticle race. time as parameter without        stepping on any obsticle.
+2: 2 truths 1 lie
+3: Bottle ball and pen (bin) time 1 min no. of balls count
+4: Lemon spoon game
+5: dumb sharats
+6: guess movie from popular hook step/dialogue
+7: make them sing and dance
+8:
+

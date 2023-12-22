@@ -1,0 +1,102 @@
+Azure Pass : QNHYK5WO184I6634RY
+
+dp 900 - 5 sjgeenratiom
+
+One Note Documentation - LIVE VIEW
+https://1drv.ms/o/s!Aht-oGFG3XwWgaxuLyORkukpYtXUwQ?e=3qcy31
+
+guest connect
+user h474b
+pwd-mmqw
+
+FraudDetectionCallsCJNS : onnection string primary key - 
+Endpoint=sb://frauddetectioncallscjns.servicebus.windows.net/;SharedAccessKeyName=FraudDataCapturePolicy;SharedAccessKey=l43SHkQS/VuKBHYjdxje+w/cbM5FxB6gA+AEhKi7Otc=;EntityPath=frauddetecteventhub
+
+pin:12365
+
+key 1809: IR@c65bd0e6-b6b1-437f-a02b-e56a91a1cc9c@adfmbchinmai1809@ServiceEndpoint=adfmbchinmai1809.eastus.datafactory.azure.net@dqDey1jgYuykG4Z3QJVWmoeKPXJTQUD57ZlNncnT1vo=
+
+####ChinAzure2023
+
+Google Drive - Training Data
+https://drive.google.com/drive/folders/1d0NiMEPjq4dg1ySEXfORGAZNWhcvJiAr?usp=sharing
+-------------------------------------------------------------------------------------
+AZ-900 - Azure Fundamental - 1 Day (1st Target)
+---------------------------------------------------
+Administration
+AZ-104 - Azure Administration - 4 Days (2nd Target)
+1. Compute
+2. Storage
+3. Networking
+4. Monitoring
+5. Security
+---------------------------------------------------
+Developers
+AZ-204 - Developing Solution on Azure - .NET/Java
++
+AZ-400 - Azure DevOps
+---------------------------------------------------------------
+Data
+DP-300 - Relational Databases on Azure - Work on SQK Server
+
+DP-203 - Azure Data Engineering (3rd Target)
+1. Storage
+2. SQL Databases
+3. Synapse Analytics
+4. Databricks
+5. Datafactory
+6. Stream Analytics
+------------------------------------------------------------------------------------------------
+AWS
+https://aws.amazon.com/certification/certified-data-analytics-specialty/?ch=sec&sec=rmg&d=1
+DP-203 - Azure Data engineering
+https://learn.microsoft.com/en-us/certifications/exams/dp-203/
+or
+AWS - AWS Data Analytics
+https://aws.amazon.com/certification/certified-data-analytics-specialty/?ch=sec&sec=rmg&d=1
+------------------------------------------------------------------------------------------------
+Data Engineering: 
+Good to know 
+Python
+SQL
+Scala
+
+Data Scientist:
+Must and Mandatory to Know
+Python
+SQL
+Scala
+R 
+(Minimum 2)
+------------------------------------------------------------------------------------------------
+Databases
+- SQL Database
+- SQL Elastic Pool
+- Azure CosmosDB
+
+Analytics
+- DataFactory ****** Priyority 2
+- Azure Databricsk ***** Priyority 1
+- Azure Synapse Analytics ***** Priyority 1
+- Event Hubs
+- Stream Analytics Jobs
+
+Storage
+- Storage Accounts
+- Data Lake Storage Gen2
+
+Security
+- Key Vault
+
+Power BI - Present the Data in a Visualization
+------------------------------------------------------------------------------------------------
+*(DP-203 exam question) Zone redundunt database
+*Hyperbase - 100TB storage it provides
+
+_______________________________________________________________________________________________________
+Tasks: 21-09-2023
+1. finding top 10 airports with highest passenger traffic.
+2. average passenger count per airline. how much were were the passenger count in 2020, boarded, deboarded and transit
+average of passenger count by airlines
+total passenger count by activity type for year 2020
+3. persentage change in passenger count between each airport in 2019 to 2020
