@@ -1,0 +1,35 @@
+1.Download and install  
+
+a.Python
+https://www.python.org/downloads/windows/
+b.Visual Studio code
+https://code.visualstudio.com/
+c.Git 
+https://git-scm.com/download/win
+d.Miniconda
+https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html
+
+2.Creation setup enviorment for the streamlit
+conda create -n streamlit_env python=3.9
+pip install streamlit
+streamlit hello
+
+
+3.Creation setup environment for the DBt
+a.In the vs code create the new environment for the DBT.
+b.conda create -n dbt_env python=3.9
+c.active the dbt environment by ctrl + shift + p 
+d.python:select intrepreter -> dbt_env 
+e.pip install dbt-snowflake
+f.project -athlon.eu-central-1
+g.DATASCIENCE_ADMIN
+h.datascience_wh
+i.DATASCIENCE_DEV
+
+b. git setup environment -
+1.open the gitbash  and run the below command 
+2.ssh-keygen -t ed25519 -C "your_email@example.com"
+3. add the key file content to githuv web profile 
+ https://git.i.mercedes-benz.com/ -> click on profile -> setting -> SSH and GPG keys -> copy paste content of file.
+
+
